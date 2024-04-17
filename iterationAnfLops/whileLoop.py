@@ -1,7 +1,7 @@
-n = 10
-while n > 0:
-    print(n)
-    n -= 1
+# n = 10
+# while n > 0:
+#     print(n)
+#     n -= 1
 
 def sumList(l):
     s = 0
@@ -55,3 +55,20 @@ def hasDuplicates(list):
             if list[i] == list[j]:
                 return True
     return False
+
+def printEvenOdd(n):
+    for i in range(n, 0, -1):
+        if i % 2 == 0:
+            print("Even number:", i)
+        else:
+            print("Odd number:", i)
+
+printEvenOdd(10)
+
+def printEvenOddRev(n):
+    while(n > 0):
+        if (n % 2 == 0):
+            print ("Even number:",n)
+        else:
+            print ("Odd number:",n)
+        n = n - 1
